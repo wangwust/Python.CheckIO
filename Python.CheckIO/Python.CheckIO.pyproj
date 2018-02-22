@@ -5,13 +5,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>eb272489-2e1c-4b11-a916-1e2b9a6d2a9d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Other\Faboracci.py</StartupFile>
+    <StartupFile>test.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Python.CheckIO</Name>
     <RootNamespace>Python.CheckIO</RootNamespace>
+    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -26,17 +28,31 @@
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="1th.py" />
-    <Compile Include="2th.py" />
-    <Compile Include="3th.py">
+    <Compile Include="CheckIO\1th.py" />
+    <Compile Include="CheckIO\2th.py" />
+    <Compile Include="CheckIO\3th.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Other\Faboracci.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XieCheng\airline_ticket.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XieCheng\air_stations.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="CheckIO\" />
+    <Folder Include="XieCheng\" />
     <Folder Include="Other\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.5" />
   </ItemGroup>
   <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
   <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
