@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>eb272489-2e1c-4b11-a916-1e2b9a6d2a9d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>test.py</StartupFile>
+    <StartupFile>CheckIO\4th.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -31,6 +31,9 @@
     <Compile Include="CheckIO\1th.py" />
     <Compile Include="CheckIO\2th.py" />
     <Compile Include="CheckIO\3th.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckIO\4th.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Other\Faboracci.py">
